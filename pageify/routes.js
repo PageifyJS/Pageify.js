@@ -3,7 +3,7 @@ console.log(querys);
 
 var page;
 
-if (querys[Object.keys(querys)[0]]== "undefined") {
+if (querys[Object.keys(querys)[0]]!= "undefined") {
   page="/";
 } else {
   page=Object.keys(querys)[0];
