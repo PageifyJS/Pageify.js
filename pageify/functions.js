@@ -5,7 +5,9 @@ function test() {
   id = id.replace('dynamic-update-', '');
 });
 }
+/*
 setInterval(function(){
  var ids = document.getElementById(id).value;
  alert(ids);
 },1000/4)
+*/
