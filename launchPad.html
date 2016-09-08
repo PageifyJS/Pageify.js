@@ -1,0 +1,11 @@
+<html>
+<body>
+<script>
+setInterval(function(){
+console.log(document.getElementById("dynamic-update-text").innerHTML=document.getElementsByName("text").value);
+}, 1000/1000);
+</script>
+<p><textarea name="text"></textarea></p>
+<dynamicContent id="dynamic-update-text"></dynamicContent>
+</body>
+</html>
