@@ -11,13 +11,15 @@ client.onreadystatechange = function() {
 }
 client.send();
 }
-function load(page){
-var client = new XMLHttpRequest();
-client.open('GET', page);
-client.onreadystatechange = function() {
-  if (client.readyState == 4 && client.status == 200) {
-    return client.responseText;
- }
-}
-client.send();
+
+function load(url) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var body = document.body.innerHTML;
+      document.body.innerHTML = body + this.responseText;
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
 }
