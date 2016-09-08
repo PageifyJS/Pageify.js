@@ -1,4 +1,5 @@
 function test() {
-  var elements = document.getElementsByTagName('dynamicContent').id;
-  alert(elements)
+  Array.prototype.forEach.call(document.querySelectorAll("dynamicContent"), function(el) {
+  alert(el.id);
+});
 }
