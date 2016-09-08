@@ -8,7 +8,7 @@ ______  ___  _____  _____ _____
 Specify all pages that you will wish to load here
 */
 var pages = {
- default_load : {"url":"./page1.html","callback":"function(){}","route":"home"},
+ default_load : {"url":"./page1.html","callback":"function(){}","route":"/"},
  page1 : {"url":"./page1.html","callback":"function(){}","route":"page1"},
  page2 : {"url":"./page2.html","callback":"function(){}","route":"page2"}
 }
