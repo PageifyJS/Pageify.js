@@ -22,9 +22,9 @@ function loadPage(url) {
   xhttp.send();
 }
 
-  for (i in routes) {
-    if (routes[i].route==page) {
-      loadPage(routes[i].pagelocation);
-      eval(routes[i].callback)
+  for (i in pages) {
+    if (pages[i].route==page) {
+      loadPage(pages[i].url);
+      eval(pages[i].callback)
     }
   }
