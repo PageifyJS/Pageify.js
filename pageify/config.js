@@ -7,9 +7,11 @@ ______  ___  _____  _____ _____
 \_|   \_| |_/\____/\____/\____/
 Specify all pages that you will wish to load here
 */
-var default_load = "./page1.html"
-var page1 = "./page1.html"
-var page2 = "./page2.html"
+var pages = {
+ var default_load = {"url":"./page1.html","callback":"function(){}","route":"home"}
+ var page1 = {"url":"./page1.html","callback":"function(){}","route":"page1"}
+ var page2 = {"url":"./page2.html","callback":"function(){}","route":"page2"}
+}
 
 /*
  _   _            _       _     _
