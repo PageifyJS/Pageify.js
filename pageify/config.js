@@ -11,7 +11,7 @@ var pages = {
  default_load : {"url":"./page1.html","callback":"function(){}","route":"/"},
  "page1" : {"url":"./page1.html","callback":"function(){}","route":"page1"},
  "page2" : {"url":"./page2.html","callback":"function(){}","route":"page2"},
- "test" : {"url":"http://crossorigin.me/https://scratch.mit.edu/discuss/topic/207160/?page=11#post-2196614","callback":"function(){}","route":"test"}
+ "test" : {"url":"http://crossorigin.me/https://scratch.mit.edu/discuss/topic/207160/?page=11#post-2196614","callback":"function(){}","route":"/test"}
 }
 
 /*
