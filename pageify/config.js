@@ -8,9 +8,9 @@ ______  ___  _____  _____ _____
 Specify all pages that you will wish to load here
 */
 var pages = {
- var default_load = {"url":"./page1.html","callback":"function(){}","route":"home"}
- var page1 = {"url":"./page1.html","callback":"function(){}","route":"page1"}
- var page2 = {"url":"./page2.html","callback":"function(){}","route":"page2"}
+ default_load : {"url":"./page1.html","callback":"function(){}","route":"home"},
+ page1 : {"url":"./page1.html","callback":"function(){}","route":"page1"},
+ page2 : {"url":"./page2.html","callback":"function(){}","route":"page2"}
 }
 
 /*
