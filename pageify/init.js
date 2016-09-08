@@ -10,10 +10,10 @@ function loadScript(url) {
   xhttp.send();
 }
 function initiate(){
-   retrievePage("default_load", "content");
    loadScript('./pageify/functions.js');
    loadScript('./pageify/config.js');
    loadScript('./pageify/interpreter.js');
    loadScript('./pageify/routes.js');
+  retrievePage("default_load", "content");
    interpret()
 }
