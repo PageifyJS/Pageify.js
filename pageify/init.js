@@ -6,6 +6,5 @@ function initiate() {
 	loadScript('./pageify/config.js');
 	loadScript('./pageify/interpreter.js');
 	loadScript('./pageify/routes.js');
-	retrievePage("default_load", "content");
 	interpret()
 }
