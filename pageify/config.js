@@ -14,6 +14,8 @@ var pages = {
  test : {"url":"https://crossorigin.me/https://scratch.mit.edu/discuss/topic/207160/?page=11#post-2196614","callback":"function(){}","route":"/test"}
 }
 
+retrievePage("default_load", "content");
+
 /*
  _   _            _       _     _
 | | | |          (_)     | |   | |
