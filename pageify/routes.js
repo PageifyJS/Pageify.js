@@ -26,7 +26,7 @@ function loadPage(url) {
 
   for (i in pages) {
     if (pages[i].route==page) {
-      loadPage(pages[i].url);
+      loadPage(pages[i].url, "content");
       eval(pages[i].callback)
     }
   }
