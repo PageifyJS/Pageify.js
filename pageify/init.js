@@ -10,6 +10,6 @@ function initiate() {
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
 }
- loadScript("./pageify/loader.js");
+ loadScript("./pageify/config.js");
 	interpret()
 }
