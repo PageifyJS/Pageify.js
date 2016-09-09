@@ -5,7 +5,7 @@ if (data) {
 var myString = data;
 
  for(i in variables) {
-  console.log(i, varibles[i])
+  console.log(i, variables[i])
      myString = myString.replace(new RegExp('{{' + i + '}}', 'gi'), variables[i]);
   }
   return myString;
