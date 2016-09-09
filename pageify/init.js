@@ -27,7 +27,7 @@ function initiate() {
      	imageObj = new Image();
 	 // set image list
 	 // start preloading
-	 for(i=0; i<=images.length; i++) 
+	 for(i in images) 
 	 {
 	      imageObj.src=images[i];
 	 }
