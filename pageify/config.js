@@ -9,7 +9,6 @@ Specify all pages that you will wish to load here
 */
 var pages = {
  "404_page" : {"url":"./404.html","callback":"function(){}","route":"/404"},
- "demo": {"url":"https://crossorigin.me/http://crashchrome.com","callback":"function(){}","route":"/routetest"},
  default_load : {"url":"./page1.html","callback":"function(){}","route":"/"},
  page1 : {"url":"./page1.html","callback":"function(){}","route":"/page1"},
  page2 : {"url":"./page2.html","callback":"function(){}","route":"/page2"},
