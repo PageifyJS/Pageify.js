@@ -24,10 +24,16 @@ client.onreadystatechange = function() {
 }
 client.send();
 }
-
+  var is404 = true;
   for (i in pages) {
     if (pages[i].route==page) {
+      is404=false;
       retrieveRoutedPage(pages[i], "content");
-      eval(pages[i].callback)
+      eval(pages[i].callback);
+      
     }
+  } 
+  if (if404) {
+    retrieveRoutedPage(pages["404_page"], "content");
+      eval(pages[i].callback);
   }
