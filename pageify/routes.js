@@ -20,7 +20,7 @@ function loadPage(url) {
       interpret()
     }
   };
-  xhttp.open("GET", "../index.html", true);
+  xhttp.open("GET", "index.html", true);
   xhttp.send();
 }
 
