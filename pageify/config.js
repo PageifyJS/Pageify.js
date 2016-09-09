@@ -31,6 +31,7 @@ All PageVars are stored in an array to make it easy to use and change yet extrem
 var variables = {
     name: "Pageify",
     is: "is",
+    "{{name}}": "Pageify",
 };
 
 /*
