@@ -1,4 +1,4 @@
-function retrievePage(file, section){
+function retrievePage(page, section){
 var client = new XMLHttpRequest();
 var file = pages[page].url;
 client.open('GET', file);
