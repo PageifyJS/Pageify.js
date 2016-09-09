@@ -13,7 +13,7 @@ var routes = {};
 
 function retrieveRoutedPage(page, section){
 var client = new XMLHttpRequest();
-var file = pages[page].url;
+var file = page.url;
 client.open('GET', file);
 client.onreadystatechange = function() {
   if (client.readyState == 4 && client.status == 200) {
@@ -27,7 +27,7 @@ client.send();
 
   for (i in pages) {
     if (pages[i].route==page) {
-      retrieveRoutedPage(pages[i].url, "content");
+      retrieveRoutedPage(pages[i], "content");
       eval(pages[i].callback)
     }
   }
