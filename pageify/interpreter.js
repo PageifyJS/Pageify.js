@@ -5,7 +5,7 @@ if (data) {
 var myString = data;
 
  for(var i = 0; i < Object.keys(variables).length; i++) {
-    typeof data;
+    console.log(typeof data);
      var extract = data.match(/{{(.*)}}/).pop();
      myString = myString.replace(new RegExp('{{' + extract + '}}', 'gi'), variables[extract]);
   }
