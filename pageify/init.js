@@ -10,6 +10,5 @@ function initiate() {
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
 }
- loadScript("./pageify/config.js");
 	interpret()
 }
