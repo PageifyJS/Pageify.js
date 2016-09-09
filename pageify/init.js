@@ -8,6 +8,7 @@ if (querys[Object.keys(querys)[0]]!= "undefined" || querys[""]==="undefined") {
 } else {
   page=Object.keys(querys)[0];
 }
+initiate();
 function initiate() {
  function loadScript(url) {
         var xmlhttp = new XMLHttpRequest();
