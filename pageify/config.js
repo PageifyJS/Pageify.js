@@ -9,7 +9,7 @@ Specify all pages that you will wish to load here
 */
 var pages = {
  default_load : {"url":"./page1.html","callback":"function(){}","route":"/"},
- page1 : {"url":"./page1.html","callback":"function(){}","route":"page1"},
+ page1 : {"url":"./page1.html","callback":"function(){}","route":"/page1"},
  page2 : {"url":"./page2.html","callback":"function(){}","route":"/page2"},
  test : {"url":"https://crossorigin.me/https://scratch.mit.edu/discuss/topic/207160/?page=11#post-2196614","callback":"function(){}","route":"/test"}
 }
@@ -28,4 +28,5 @@ All PageVars are stored in an array to make it easy to use and change yet extrem
 */
 var variables = {
     name: "Pageify",
+    is: "is",
 };
