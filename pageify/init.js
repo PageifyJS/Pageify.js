@@ -16,7 +16,6 @@ function initiate() {
      	// create object
      	imageObj = new Image();
 	 // set image list
-	 var images;
 	 // start preloading
 	 for(i=0; i<=images.length; i++) 
 	 {
