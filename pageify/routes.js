@@ -33,7 +33,7 @@ client.send();
       
     }
   } 
-  if (if404) {
+  if (is404) {
     retrieveRoutedPage(pages["404_page"], "content");
       eval(pages[i].callback);
   }
