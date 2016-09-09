@@ -1,3 +1,13 @@
+var querys = window.location.search.slice(1).split('&').reduce(function _reduce (/*Object*/ a, /*String*/ b) {b = b.split('=');a[b[0]] = decodeURIComponent(b[1]);return a;}, {});
+console.log(querys);
+
+var page;
+
+if (querys[Object.keys(querys)[0]]!= "undefined") {
+  page="/";
+} else {
+  page=Object.keys(querys)[0];
+}
 function initiate() {
  function loadScript(url) {
         var xmlhttp = new XMLHttpRequest();
