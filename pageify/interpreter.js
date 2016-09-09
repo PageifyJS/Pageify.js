@@ -4,10 +4,9 @@ function interpret(data) {
 if (data) {
 var myString = data;
 
- for(var i = 0; i < Object.keys(variables).length; i++) {
-    console.log(typeof data);
-     var extract = data.match(/{{(.*)}}/).pop();
-     myString = myString.replace(new RegExp('{{' + extract + '}}', 'gi'), variables[extract]);
+ for(i in variables) {
+  console.log(i, varibles[i])
+     myString = myString.replace(new RegExp('{{' + i + '}}', 'gi'), variables[i]]);
   }
   return myString;
  }
