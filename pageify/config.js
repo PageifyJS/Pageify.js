@@ -31,7 +31,7 @@ All PageVars are stored in an array to make it easy to use and change yet extrem
 var variables = {
     name: "Pageify",
     is: "is",
-    error_page:"page"
+    error_page:page
 };
 
 /*
