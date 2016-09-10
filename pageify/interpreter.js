@@ -7,7 +7,11 @@ var myString = data;
  for(i in variables) {
      myString = myString.replace(new RegExp('{{' + i + '}}', 'gi'), variables[i]);
   }
+  if(force_https) {
   myString = myString.replace(new RegExp('http://', 'gi'), "https://crossorigin.me/http://");
+  }else{
+   console.warn("You have disabled force https. This will result in insecure cintent being displayed. Please enable force https!")
+  }
   return myString;
  }
 }
