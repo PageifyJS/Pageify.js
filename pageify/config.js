@@ -8,6 +8,10 @@
                              __/ |    
                             |___/     
 */
+//Force https
+//Disabling this setting could result in insecure content being displayed
+//it is recommended to keep this setting enabled
+force_https = "true";
 
 /*
 ______  ___  _____  _____ _____
