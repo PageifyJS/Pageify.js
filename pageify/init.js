@@ -33,6 +33,5 @@ function initiate() {
 	      imageObj.src=images[i];
 	 }
 	} 
-	interpret()
 	preloader()
 }
