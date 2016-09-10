@@ -23,13 +23,13 @@ ______  ___  _____  _____ _____
 Specify all pages that you will wish to load here
 */
 var pages = {
- "404_page" : {"url":"./404.html","callback":"function(){}","route":"/404"},
- default_load : {"url":"./page1.html","callback":"function(){}","route":"/"},
- page1 : {"url":"./page1.html","callback":"function(){}","route":"/page1"},
- page2 : {"url":"./page2.html","callback":"function(){}","route":"/page2"},
+ "404_page" : {"url":"./404.html","callback":"","route":"/404"},
+ default_load : {"url":"./page1.html","callback":"","route":"/"},
+ page1 : {"url":"./page1.html","callback":"","route":"/page1"},
+ page2 : {"url":"./page2.html","callback":"","route":"/page2"},
  test : {"url":"https://crossorigin.me/https://scratch.mit.edu/discuss/topic/207160/?page=11#post-2196614","callback":"function(){}","route":"/test"},
- test2 : {"url":"https://crossorigin.me/http://ahitt-industries.com","callback":"function(){}","route":"/test2"},
- google : {"url":"https://crossorigin.me/https://google.com","callback":"function(){}","route":"/google"}
+ test2 : {"url":"https://crossorigin.me/http://ahitt-industries.com","callback":"","route":"/test2"},
+ google : {"url":"https://crossorigin.me/https://google.com","callback":"","route":"/google"}
 }
 
 retrievePage("default_load", "content");
