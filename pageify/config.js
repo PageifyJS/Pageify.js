@@ -31,7 +31,7 @@ All PageVars are stored in an array to make it easy to use and change yet extrem
 var variables = {
     name: "Pageify",
     is: "is",
-    copy_right: "&copy; HittmanA 2016 and forever!",
+    copy_right: "&copy HittmanA 2016 and forever!",
     error_page:page
 };
 
