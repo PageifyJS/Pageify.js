@@ -14,6 +14,7 @@ var pages = {
  page2 : {"url":"./page2.html","callback":"function(){}","route":"/page2"},
  test : {"url":"https://crossorigin.me/https://scratch.mit.edu/discuss/topic/207160/?page=11#post-2196614","callback":"function(){}","route":"/test"},
  test2 : {"url":"https://crossorigin.me/http://ahitt-industries.com","callback":"function(){}","route":"/test2"}
+ google : {"url":"https://crossorigin.me/https://google.com","callback":"function(){}","route":"/google"}
 }
 
 retrievePage("default_load", "content");
