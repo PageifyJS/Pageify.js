@@ -7,7 +7,7 @@ function test() {
 });
 }
 function findMatch(match) {
-  var value = document.getElementById(match).value;
+  var value = document.getElementsByName(match).value;
   var one = 'dynamic-update-'+match;
   document.getElementById(one).innerHTML = value;
 }
