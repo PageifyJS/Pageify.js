@@ -5,6 +5,7 @@ function test() {
   var id = id.replace('dynamic-update-', '');
 });
 }
+test();
 alert(id);
 /*
 setInterval(function(){
