@@ -11,6 +11,9 @@ function findMatch(match) {
   var one = 'dynamic-update-'+match;
   document.getElementById(one).innerHTML = value;
 }
+setInterval(function(){
+  test()
+},1000/25);
 /*
 setInterval(function(){
  var ids = document.getElementById(id).value;
