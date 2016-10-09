@@ -1,18 +1,18 @@
 /*
- _____      _   _   _                 
-/  ___|    | | | | (_)                
-\ `--.  ___| |_| |_ _ _ __   __ _ ___ 
+ _____      _   _   _
+/  ___|    | | | | (_)
+\ `--.  ___| |_| |_ _ _ __   __ _ ___
  `--. \/ _ \ __| __| | '_ \ / _` / __|
 /\__/ /  __/ |_| |_| | | | | (_| \__ \
 \____/ \___|\__|\__|_|_| |_|\__, |___/
-                             __/ |    
-                            |___/     
+                             __/ |
+                            |___/
 */
 //Force https
 //Disabling this setting could result in insecure content being displayed
 //it is recommended to keep this setting enabled
 force_https = true;
-
+site_down = false;
 /*
 ______  ___  _____  _____ _____
 | ___ \/ _ \|  __ \|  ___/  ___|
@@ -25,11 +25,10 @@ Specify all pages that you will wish to load here
 var pages = {
  "404_page" : {"url":"./404.html","callback":"","route":"/404"},
  default_load : {"url":"./page1.html","callback":"","route":"/"},
+ "site_down" : {"url":"./sitedown.html","callback":"","route":"/sitedown"},
  page1 : {"url":"./page1.html","callback":"","route":"/page1"},
  page2 : {"url":"./page2.html","callback":"","route":"/page2"},
- test : {"url":"https://crossorigin.me/https://scratch.mit.edu/discuss/topic/207160/?page=11#post-2196614","callback":"function(){}","route":"/test"},
- test2 : {"url":"https://crossorigin.me/http://ahitt-industries.com","callback":"","route":"/test2"},
- google : {"url":"https://crossorigin.me/https://google.com","callback":"","route":"/google"}
+ test : {"url":"https://crossorigin.me/https://scratch.mit.edu/discuss/topic/207160/?page=11#post-2196614","callback":"function(){}","route":"/test"}
 }
 
 retrievePage("default_load", "content");
@@ -52,12 +51,12 @@ var variables = {
 };
 
 /*
- ________  ___  ___  _____  _____ _____ 
+ ________  ___  ___  _____  _____ _____
 |_   _|  \/  | / _ \|  __ \|  ___/  ___|
-  | | | .  . |/ /_\ \ |  \/| |__ \ `--. 
+  | | | .  . |/ /_\ \ |  \/| |__ \ `--.
   | | | |\/| ||  _  | | __ |  __| `--. \
  _| |_| |  | || | | | |_\ \| |___/\__/ /
- \___/\_|  |_/\_| |_/\____/\____/\____/ 
+ \___/\_|  |_/\_| |_/\____/\____/\____/
 */
 var images = [
  "https://avatars0.githubusercontent.com/u/10731781?v=3&s=30"

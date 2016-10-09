@@ -1,7 +1,7 @@
-var querys = window.location.search.slice(1).split('&').reduce(function _reduce (/*Object*/ a, /*String*/ b) {b = b.split('=');a[b[0]] = decodeURIComponent(b[1]);return a;}, {});
+let querys = window.location.search.slice(1).split('&').reduce(function _reduce (/*Object*/ a, /*String*/ b) {b = b.split('=');a[b[0]] = decodeURIComponent(b[1]);return a;}, {});
 console.log(querys);
 
-var page;
+let page;
 
 if (querys[Object.keys(querys)[0]]!= "undefined" || querys[""]==="undefined") {
   page="/";
@@ -11,10 +11,10 @@ if (querys[Object.keys(querys)[0]]!= "undefined" || querys[""]==="undefined") {
 initiate();
 function initiate() {
  function loadScript(url) {
-        var xmlhttp = new XMLHttpRequest();
+        let xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                var body = document.body.innerHTML;
+                let body = document.body.innerHTML;
                 document.body.innerHTML = body + "<script>" + this.responseText + "</script>";
             }
         };
@@ -23,16 +23,20 @@ function initiate() {
 }
  function preloader() {
 	 // counter
-     	var i = 0;
+     	let i = 0;
      	// create object
      	imageObj = new Image();
 	 // set image list
 	 // start preloading
-	 for(i in images) 
+	 for(i in images)
 	 {
 	      imageObj.src=images[i];
 	 }
-	} 
+	}
 	interpret()
 	preloader()
 }
+/*
+if(site_down == true) {
+  window.location.replace(pages["site_down"]);
+}*/
